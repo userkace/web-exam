@@ -1,0 +1,91 @@
+:root{
+    --yellow: #F4D160;
+    --off-white: #FBEEAC;
+    --pale-blue: #75C2F6;
+    --pink: #FF8080;
+    --blue: #1D5D9B;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    color: var(--pale-blue);
+    float: left;
+}
+h1{
+    padding-bottom: 0.5em;
+}
+h1,p,a{
+    margin: 0;
+}
+body{
+    display: flexbox;
+    background-color: var(--yellow);
+}
+.title{
+    color: var(--pink);
+}
+form{
+    margin:0;
+    padding:1em 2em 2em 2em;
+    width: 20em;
+    height: 95vh;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    box-shadow: grey 0px 0px 5px 0px;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+#check{
+    float: left;
+}
+.check{
+    display: inline-block;
+    font-size: 0.9em; 
+    color: var(--pink);
+    padding: 0 1em 1em 1em;
+    vertical-align: middle;
+}
+#input,
+textarea,
+select{
+    min-width: 12em;
+    max-width: 12em;
+    float: right;
+    min-height: 2em;
+    max-height: 10em;
+    background-color: white;
+    border: 1px solid var(--pale-blue);
+    border-radius: 10px;
+}
+#input:active,
+textarea:active,
+select:active{
+    border-color: var(--pale-blue);
+}
+#input:hover,
+textarea:hover,
+select:hover{
+    border-color: var(--pale-blue);
+}
+textarea{
+    margin-bottom: 2em;
+}
+.field{
+    display: block;
+    min-height: 3em;
+}
+button{
+    width: 100%;
+    height: 3em;
+    background-color: var(--yellow);
+    color: var(--blue);
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: var(--pink);
+    color: var(--off-white);
+}
